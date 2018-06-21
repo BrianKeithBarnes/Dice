@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            .bar {
+            background-color: black;
+            }
+        </style>
+    </head>
+<body>
+    <script>
+        var counts = [0,0,0,0,0,0,0,0,0,0,0,0,0];
+        for(i = 1; i <= 1000; i++) {
+            Math.floor(Math.random()*6+1)
+            var first = Math.floor(Math.random()*6+1)
+            console.log(first)
+            Math.floor(Math.random()*6+1)
+            var second = Math.floor(Math.random()*6+1)
+            console.log(second)
+            counts[first+second]++
+        }
+for(var j = 2; j < 12; j++){
+var num = document.createElement("p")
+num.textContent = j + ": " + counts[j];
+document.body.appendChild(num)
+var newDiv = document.createElement("div");
+document.body.appendChild(newDiv);
+newDiv.className ="bar";
+newDiv.style.width = counts[j] + "px";
+newDiv.style.height = "10px"
+
+}
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
